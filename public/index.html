@@ -168,14 +168,14 @@
                   </li>
                   <li>
                     <div class="user-profile-label">Skills:</div>
-                    <tags-input id="tags-input" ng-model="skills" class="user-profile-update-input" placeholder="Enter your tech skills (e.g., HTML, CSS, JavaScript)" value="{{skills}}">
+                    <tags-input id="tags-input" ng-model="skills" class="user-profile-update-input" placeholder="HTML, CSS, JavaScript" value="{{skills}}">
                       <auto-complete source="loadTags($query)"></auto-complete>
                     </tags-input>
                   </li>
                   <li class="clearfix">
                     <div class="user-profile-label">Profile Image:</div>
                     <img id="preview" src="{{loggedInUserProfileImage}}" style="float:left; margin-right:20px" width="150px" />
-                    <input type="file" id="file" name='file' onchange="angular.element(this).scope().updateUserProfileImage(this)" style="float:left;" />
+                    <div> <input type="file" id="file" name='file' onchange="angular.element(this).scope().updateUserProfileImage(this)" /> </div>
                   </li>
                 </ul>
                 <div ng-show="errorFound" class="error">{{error}}</div>

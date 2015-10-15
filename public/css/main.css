@@ -156,6 +156,7 @@ hr {
 }
 
 .user-profile-label {
+  font-weight: bold;
   width:200px;
   float:left;
 }
